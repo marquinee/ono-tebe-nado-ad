@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 50px 97px;
+  padding: 92px 50px 90px;
   font-size: 18px;
   line-height: 1;
 }
@@ -83,7 +83,7 @@
 .cover {
   position: relative;
   z-index: 0;
-  padding: 165px 50px 50px;
+  padding: 170px 50px 55px;
   color: #fff;
   background-color: #6c6c6c;
   background-image: url(../images/cover.jpg);
@@ -249,7 +249,7 @@
   display: grid;
   grid-template-columns: 334px 1fr;
   column-gap: 25px;
-  padding: 181px 50px;
+  padding: 181px 50px 170px;
 }
 
 .about__column {
