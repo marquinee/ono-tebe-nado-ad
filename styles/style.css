@@ -16,13 +16,24 @@
   flex-wrap: nowrap;
   align-items: center;
   gap: 32px;
-  list-style: circle;
-  list-style-position: inside;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
   white-space: nowrap;
 }
 
-.header__links-list-item_no-bullit {
+/* Возвращаем кружок для пунктов меню, у которых нет класса no-bullit */
+.header__links-list-item:not(.header__links-list-item_no-bullit) {
+  position: relative;
   list-style-type: none;
+}
+
+.header__links-list-item:not(.header__links-list-item_no-bullit)::before {
+  content: "○";
+  position: absolute;
+  left: -20px;
+  color: currentColor;
+  font-size: inherit;
 }
 
 
