@@ -15,13 +15,14 @@
   font-size: 18px;
   line-height: 1.17;
   list-style: circle;
-  list-style-position: outside;
+  list-style-position: outside; /*маркеры рисуются за пределами содержимого li*/
 }
 
 .header__links-list-item_no-bullit {
   list-style: none;
 }
 
+/*Применяем одинаковое свойство ко всем ссылкам*/
 .header__link,
 .address a,
 .lots__look-more-link,
@@ -45,7 +46,7 @@
 
 .address {
   max-width: 240px;
-  font-style: normal;
+  font-style: normal; /* убирает курсив, который браузер по умолчанию даёт тегу <address> */
   font-size: 18px;
   line-height: 24.3px;
 }
@@ -225,7 +226,7 @@
   width: 240px;
   height: 240px;
   margin: 0 auto;
-  border-radius: 50%;
+  border-radius: 50%; /* превращает квадрат в круг */
   background-color: #000;
 }
 
@@ -249,6 +250,7 @@
 }
 
 .about__text p:not(:last-child) {
+  /* добавляет отступ снизу всем абзацам, КРОМЕ последнего */
   margin-bottom: 24px;
 }
 
